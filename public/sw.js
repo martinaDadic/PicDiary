@@ -22,10 +22,12 @@ self.addEventListener("fetch", (event) => {event.respondWith(
             if (response.status === 404) {
                 return caches.match("404.html");
             }
-            return caches.open(staticCacheName).then((cache) =>{
-                cache.put(event.request.url, response.clone());
-                return response;
-            });
+            if (event.request.url.startsWith('http')) {
+                caches.open(staticCacheName).then((cache) => {
+                    cache.put(event.request.url, response.clone());
+                });
+            }
+            return response;
         });
     }).catch((error) =>{
         return caches.match("offline.html");
