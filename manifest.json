@@ -1,0 +1,17 @@
+{
+    "name": "PicDiary",
+    "short_name": "PicDiary",
+    "description": "Labos za Napredni razvoj programske potpore za web",
+    "display": "fullscreen",
+    "theme_color": "red",
+    "background_color": "#DDD",
+    "start_url": "/index.html",
+    "scope": ".",
+    "orientation": "portrait-primary",
+    "dir": "ltr",
+    "lang": "en-US",
+    "icons": [{
+        "src": "img/camera-icon.png",
+        "sizes": "512x512"
+    }]
+}
