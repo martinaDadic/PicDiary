@@ -23,8 +23,9 @@ self.addEventListener("fetch", (event) => {event.respondWith(
                 return caches.match("404.html");
             }
             if (event.request.url.startsWith('http')) {
+                const responseClone = response.clone();
                 caches.open(staticCacheName).then((cache) => {
-                    cache.put(event.request.url, response.clone());
+                    cache.put(event.request.url, responseClone);
                 });
             }
             return response;
