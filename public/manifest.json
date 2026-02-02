@@ -11,7 +11,7 @@
     "dir": "ltr",
     "lang": "en-US",
     "icons": [{
-        "src": "img/camera-icon.png",
+        "src": "/img/camera-icon.png",
         "sizes": "512x512"
     }]
 }
