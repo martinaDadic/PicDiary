@@ -9,7 +9,7 @@ async function StartStream(){
             alert("molim vas dopustite pristup kameri")
         }
     }else {
-        alert("Tvoj browser ne podržava pristup kameri.");
+        alert("slikavanje nije podržano");
     }
 }
 

@@ -3,7 +3,7 @@
     "short_name": "PicDiary",
     "description": "Labos za Napredni razvoj programske potpore za web",
     "display": "fullscreen",
-    "theme_color": "red",
+    "theme_color": "yellow",
     "background_color": "#DDD",
     "start_url": "/index.html",
     "scope": ".",
