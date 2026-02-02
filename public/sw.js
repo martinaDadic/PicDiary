@@ -1,9 +1,9 @@
 const filesToCache= [
     "/",
-    "manifest.json",
-    "index.html",
-    "404.html",
-    "offline.html"
+    "/manifest.json",
+    "/index.html",
+    "/404.html",
+    "/offline.html"
 ];
 const staticCacheName= "static-cache-v1";
 self.addEventListener("install", (event) => {
